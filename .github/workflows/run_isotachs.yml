@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --local user.name "${{ secrets.GIT_USER_NAME }}"
           git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
-          git add plots/isotachs/*.png
+          git add plots/250/*.png
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
