@@ -133,7 +133,7 @@ def plot_250(ds_latlon, matching_dim, init_time):
 
         plt.title(f"{ds_latlon[matching_dim][0].dt.strftime('%H00 UTC').item()} RAP 250-hPa Isotachs and Geopotential Heights | {ds_latlon[matching_dim][i].dt.strftime('%Y-%m-%d %H00 UTC').item()} | FH: {hour_difference:.0f}", fontsize=12)
         plt.tight_layout()
-        plt.savefig(f'plots/250/_{hour_difference}.png', dpi=450)
+        plt.savefig(f'plots/250/_{i}.png', dpi=450)
         iteration_end = time.time()
         print(f'Iteration {i} Processing Time:', round((iteration_end - iteration_start), 2), 'seconds.')
 
